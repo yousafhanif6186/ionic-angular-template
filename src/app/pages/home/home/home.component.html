@@ -1,0 +1,53 @@
+<section class="home-component">
+  <!-- Page header -->
+  <app-header></app-header>
+
+  <div class="container intro bg-primary">
+    <!-- Hero -->
+    <div class="hero d-flex flex-column align-items-center text-white">
+      <h1 class="text-center text-shadow-primary">
+        Discover the magic of our surprise box
+      </h1>
+
+      <p class="text-center">
+        Unleash your child's curiosity with our educational subscription box
+        filled with fun and learning.
+      </p>
+
+      <button class="btn btn-primary box-shadow-primary" (click)="routeToSubscribe();">Subscribe Now</button>
+    </div>
+
+    <!-- Banner image -->
+    <div class="banner">
+      <img
+        src="../../../../assets/images/home/banner-desktop.jpg"
+        alt="banner"
+      />
+    </div>
+  </div>
+
+  <!-- Discover -->
+  <div class="container discover">
+    <p><small>Discover</small></p>
+
+    <!-- <div class="headings d-flex flex-column flex-md-row"> -->
+      <h3>
+        How it works:
+        <br class="d-block d-md-none" />
+        Subscribe and Receive Your Surprise Box
+      </h3>
+    <!-- </div> -->
+
+    <p>
+      Subscribe to our surprise subscription box and give your child the gift of
+      learning. Each month, we curate a box filled with educational materials
+      tailored to your child's age and interests.
+    </p>
+
+    <!-- Steps component -->
+    <app-subscribe-steps [steps]="steps"> </app-subscribe-steps>
+  </div>
+
+  <!-- Page footer -->
+  <app-footer></app-footer>
+</section>

@@ -1,0 +1,44 @@
+<section class="footer-component">
+  <div class="container pb-5">
+    <h3 class="d-block d-md-none">Logo</h3>
+
+    <!-- page links -->
+    <nav class="d-block d-md-none">
+      <ul>
+        <li *ngFor="let link of navLinks">
+          <a href="{{ link.link }}"> {{ link.title }} </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- subscribe using email -->
+    <div class="subscribe d-md-none">
+      <input type="email" placeholder="Enter your email" />
+
+      <button class="btn btn-secondary">Subscribe</button>
+
+      <p class="agreement">
+        <small>
+          By subscribing you agree to with our <a href="#">Privacy Policy</a>
+        </small>
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- policy links and copy right -->
+    <div
+      class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center"
+    >
+      <div class="policy d-md-flex">
+        <div *ngFor="let link of policyLinks" class="wrapper">
+          <a href="{{ link.link }}"> {{ link.title }} </a>
+        </div>
+      </div>
+
+      <p class="copyright">
+        &copy; {{ date | date : "YYYY" }} Relume. All rights reserved.
+      </p>
+    </div>
+  </div>
+</section>

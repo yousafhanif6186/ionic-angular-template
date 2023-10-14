@@ -1,0 +1,57 @@
+nav {
+  margin-bottom: 50px;
+
+  ul {
+    list-style: none;
+
+    li {
+      padding: 10px 0;
+    }
+  }
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+
+  .btn {
+    margin-top: 20px;
+    font-family: "NunitoRegular";
+    border-radius: 0;
+  }
+
+  .agreement {
+    margin-top: 10px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+hr {
+  margin: 40px 0 10px 0px;
+}
+
+.policy {
+  .wrapper {
+    padding: 7px 0;
+    text-decoration: underline;
+  }
+}
+
+.copyright {
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .policy {
+    .wrapper {
+      margin-right: 40px;
+    }
+  }
+
+  .copyright {
+    margin: 0;
+  }
+}

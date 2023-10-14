@@ -1,0 +1,23 @@
+// Theme colors variables
+$primary-color: #ab95f9;
+$secondary-color: #3b3935;
+$success-color: #accd7e;
+$info-color: #7ab8ce;
+$warning-color: #ffbf78;
+$danger-color: #c4183c;
+
+$primary-color-dark: #7f67d5;
+
+$theme-body-font-color: #3b3935;
+$theme-placeholder-color: #c5c5c5;
+
+// gradient colors
+$gradient-primary: linear-gradient(
+  26deg,
+  var(--primary-color) 0%,
+  var(--primary-color) 100%
+);
+
+// General
+$body-font-size: 18px;
+$body-font-color: $theme-body-font-color;

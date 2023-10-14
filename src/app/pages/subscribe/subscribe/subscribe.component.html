@@ -1,0 +1,195 @@
+<section class="subscribe-component">
+  <!-- Page header -->
+  <app-header></app-header>
+
+  <div class="container">
+    <div class="wrapper">
+      <!-- Input fields form -->
+      <div class="form-wrapper">
+        <!-- Title -->
+        <div class="title">
+          <h4>Subscribe</h4>
+          <p>to our Monthly Surprise Box</p>
+        </div>
+
+        <!-- Contact form -->
+        <div class="contact-info">
+          <h6>Contact Information</h6>
+
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input
+              id="name"
+              class="form-control"
+              type="text"
+              placeholder="e.g. Osama Alshathri"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              class="form-control"
+              type="email"
+              placeholder="e.g. Osama@gmail.com"
+            />
+          </div>
+        </div>
+
+        <!-- Child's information form -->
+        <div class="child-info">
+          <h6>Child's Information</h6>
+
+          <!-- full name -->
+          <div class="form-group">
+            <label for="child_name">Child's Full Name</label>
+            <input
+              id="child_name"
+              class="form-control"
+              type="text"
+              placeholder="e.g. Sarah Mohammad"
+            />
+          </div>
+
+          <!-- Date of Birth -->
+          <div class="form-group">
+            <label>Child's Date of Birth</label>
+
+            <div class="date-of-birth d-flex">
+              <!-- Date -->
+              <select class="form-control mr-2">
+                <option value="" selected disabled hidden>Date</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+
+              <!-- Month -->
+              <select class="form-control mr-2">
+                <option value="" selected disabled hidden>Month</option>
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>Mar</option>
+                <option>Apr</option>
+                <option>May</option>
+              </select>
+
+              <!-- year -->
+              <select class="form-control">
+                <option value="" selected disabled hidden>Year</option>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Grade -->
+          <div class="form-group grade">
+            <label>Grade</label>
+
+            <select class="form-control mr-2">
+              <option value="" selected disabled hidden>e.g Grade 2</option>
+              <option>Grade 1</option>
+              <option>Grade 2</option>
+              <option>Grade 3</option>
+            </select>
+          </div>
+
+          <!-- Gender -->
+          <div class="form-group gender">
+            <label>Gender</label>
+
+            <div class="d-flex">
+              <!-- Boy -->
+              <div class="form-control boy active">
+                <p>Boy</p>
+                <i class="far fa-check-circle"></i>
+              </div>
+
+              <!-- Girl -->
+              <div class="form-control girl ml-2">
+                <p>Girl</p>
+                <i class="far fa-check-circle position-absolute"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topic selection -->
+        <div class="topic-info">
+          <h6>As a parent select any 3 topics</h6>
+
+          <div class="topics">
+            <span>Arabic</span>
+            <span class="active">Islamic</span>
+            <span>English</span>
+            <span>History</span>
+            <span>Sports</span>
+          </div>
+        </div>
+
+        <button class="btn btn-primary box-shadow-primary d-none d-md-block">
+          Continue to payment
+        </button>
+      </div>
+
+      <!-- Summary -->
+      <div class="summary-wrapper">
+        <div class="title">
+          <h4 class="mb-0">Summary</h4>
+          <p>of your Monthly Surprise Box</p>
+        </div>
+
+        <div class="mystery-box d-flex justify-content-between">
+          <div class="count">
+            <p class="mb-0"><strong>Mystery Box</strong></p>
+            <p class="text-muted"><small>x 1</small></p>
+          </div>
+
+          <div class="value">
+            <p class="mb-0">SAR <strong>456</strong></p>
+            <p class="text-muted"><small>Monthly</small></p>
+          </div>
+        </div>
+
+        <div class="cost">
+          <div>
+            <p>Subtotal</p>
+            <p>SAR <strong>456</strong></p>
+          </div>
+
+          <div>
+            <p>Shipping</p>
+            <p><small class="text-muted">Free</small></p>
+          </div>
+
+          <div>
+            <p>Taxes</p>
+            <p>SAR <strong>4.0</strong></p>
+          </div>
+
+          <hr />
+
+          <div class="total">
+            <p>Total</p>
+            <p>SAR <strong>460</strong></p>
+          </div>
+        </div>
+
+        <button class="btn btn-primary box-shadow-primary d-block d-md-none">
+          Continue to payment
+        </button>
+      </div>
+    </div>
+
+    <div class="footer d-none d-md-block w-100 mt-3 px-5">
+        <app-footer-secondary></app-footer-secondary>
+      </div>
+  </div>
+</section>

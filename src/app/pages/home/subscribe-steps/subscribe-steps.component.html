@@ -1,0 +1,20 @@
+<section class="subscribe-steps-component">
+  <div class="container steps">
+    <div class="wrapper">
+      <div *ngFor="let step of steps" class="step">
+        <img src="{{ step.image }}" alt="img" />
+
+        <h4 [innerHTML]="step.title"></h4>
+
+        <p>{{ step.description }}</p>
+      </div>
+    </div>
+
+    <button
+      class="btn btn-primary box-shadow-primary"
+      (click)="routeToSubscribe()"
+    >
+      Subscribe Now
+    </button>
+  </div>
+</section>

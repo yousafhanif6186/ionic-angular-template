@@ -1,0 +1,16 @@
+nav {
+  ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+
+    li {
+      padding: 10px;
+    }
+  }
+}
+
+p,
+h3 {
+  margin-bottom: 0;
+}

@@ -1,0 +1,69 @@
+.intro {
+  padding-bottom: 70px;
+}
+
+.hero {
+  h1 {
+    max-width: 300px;
+  }
+}
+
+.banner {
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  img {
+    border-radius: 30px;
+  }
+}
+
+.discover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 16px;
+  background-color: #fff9e6;
+  margin-bottom: 50px;
+
+  h3 {
+    max-width: 280px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    h1 {
+      max-width: 500px;
+    }
+
+    p {
+      max-width: 570px;
+    }
+  }
+
+  .banner {
+    display: flex;
+    justify-content: center;
+
+    img {
+      margin-top: 30px;
+      width: 85%;
+    }
+  }
+
+  .discover {
+    h3 {
+      max-width: 480px;
+    }
+
+    p {
+      max-width: 560px;
+    }
+  }
+}

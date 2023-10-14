@@ -1,0 +1,128 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  padding: 0 16px;
+  margin: 0;
+}
+
+.bg-primary {
+  background-color: $primary-color !important;
+}
+
+.text-shadow-primary {
+  text-shadow: 0px 3px 0px $primary-color-dark !important;
+}
+
+.box-shadow-primary {
+  box-shadow: 4px 4px 3px $primary-color-dark !important;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  margin: 0;
+  border-color: $secondary-color;
+}
+
+button,
+.btn {
+  height: 47px;
+  font-family: "NunitoBlack";
+  border: none;
+  border-radius: 15px;
+}
+
+.btn-primary {
+  color: $primary-color;
+  background-color: white;
+  border: 1px solid $primary-color-dark;
+
+  &:hover {
+    color: white;
+    background-color: $primary-color-dark;
+  }
+}
+
+.btn-secondary {
+  color: $secondary-color;
+  background-color: white;
+  border: 1px solid $secondary-color;
+
+  &:hover {
+    color: white;
+    background-color: $secondary-color;
+  }
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  color: white;
+  background-color: $primary-color-dark;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: white;
+  background-color: $primary-color-dark;
+}
+
+a {
+  font-family: "NunitoSemiBold";
+  color: $theme-body-font-color;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+li {
+  text-decoration: none;
+}
+
+input {
+  height: 47px;
+  border: 1px solid $secondary-color;
+  padding: 10px;
+}
+
+.form-control {
+  border-radius: 8px;
+
+  &::placeholder {
+    // chrome, firefox
+    color: $theme-placeholder-color;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    // internet explorer
+    color: $theme-placeholder-color;
+  }
+
+  &::-ms-input-placeholder {
+    // microsoft edge
+    color: $theme-placeholder-color;
+  }
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1em;
+}
+
+label {
+  font-size: 14px;
+  font-family: "NunitoSemiBold";
+  margin-bottom: 5px;
+}
+
+small {
+  font-size: 12px;
+}

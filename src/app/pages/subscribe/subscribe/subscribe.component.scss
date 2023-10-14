@@ -1,0 +1,170 @@
+@import "../../../../assets/scss/variables.scss";
+
+.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.wrapper {
+  border-radius: 15px;
+  border: 1px solid #c6c6c6;
+}
+
+// Input Form section
+.form-wrapper {
+  padding: 40px 10px;
+
+  .title {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #c6c6c6;
+  }
+
+  // Date of birth and grades
+  .date-of-birth,
+  .grade {
+    .form-control {
+      color: $theme-placeholder-color;
+    }
+
+    option {
+      color: $secondary-color;
+    }
+  }
+
+  // Gender
+  .gender {
+    .active {
+      border-color: $primary-color;
+
+      i {
+        color: $primary-color;
+      }
+    }
+
+    .form-control {
+      position: relative;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    i {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+
+  // Topics
+  .topics {
+    display: flex;
+    flex-wrap: wrap;
+
+    span {
+      border-radius: 30px;
+      margin: 5px;
+      padding: 0 13px;
+      font-size: 16px;
+      border: 1px solid #d9d9d9;
+
+      &.active {
+        color: $primary-color;
+        background-color: #ab95f934;
+        border: 1px solid $primary-color;
+      }
+    }
+  }
+
+  .child-info,
+  .topic-info {
+    margin-top: 40px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+// Summary section
+.summary-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #ab95f9;
+  padding: 40px 10px;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  font-family: "NunitoMedium";
+
+  p {
+    font-size: 15px;
+  }
+
+  .mystery-box {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px;
+    padding: 20px 10px;
+    font-size: 15px;
+    background-color: white;
+  }
+
+  .cost {
+    margin-top: 20px;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+    }
+
+    hr {
+      margin: 15px 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  button {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-wrapper {
+    width: 70%;
+    margin-right: 10px;
+
+    .title {
+      border-bottom: none;
+    }
+  }
+
+  .summary-wrapper {
+    width: 30%;
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+}

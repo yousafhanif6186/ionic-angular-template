@@ -11,19 +11,19 @@ import { ISteps } from 'src/app/shared/interfaces/home';
 export class HomeComponent implements OnInit {
   steps: ISteps[] = [
     {
-      image: '../../../../assets/images/home/banner-desktop.jpg',
+      image: '../../../../assets/images/home/subscribe.png',
       title: 'Step 1:<br class="d-none d-md-block" /> Subscribe',
       description:
         "Select a subscription plan that suits your child's learning needs and preferences.",
     },
     {
-      image: '../../../../assets/images/home/banner-desktop.jpg',
+      image: '../../../../assets/images/home/pen.png',
       title: 'Step 2:<br class="d-none d-md-block" /> Personalise Your Box',
       description:
         "Tell us about your child's age, interests and learning goals and we'll customize their surprise box accordingly.",
     },
     {
-      image: '../../../../assets/images/home/banner-desktop.jpg',
+      image: '../../../../assets/images/home/quiz.png',
       title:
         'Step 3:<br class="d-none d-md-block" /> Receive Your Surprise Box',
       description:

@@ -29,10 +29,12 @@ hr {
 
 button,
 .btn {
-  height: 47px;
+  height: 70px;
   font-family: "NunitoBlack";
   border: none;
-  border-radius: 15px;
+  border-radius: 24px;
+  font-size: 20px;
+  padding: 10px 35px;
 }
 
 .btn-primary {
@@ -124,5 +126,5 @@ label {
 }
 
 small {
-  font-size: 12px;
+  font-size: 16px;
 }

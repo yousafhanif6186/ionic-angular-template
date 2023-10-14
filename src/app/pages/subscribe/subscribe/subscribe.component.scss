@@ -14,9 +14,17 @@
 .form-wrapper {
   padding: 40px 10px;
 
+  label {
+    font-size: 14px;
+  }
+
   .title {
     margin-bottom: 20px;
     border-bottom: 1px solid #c6c6c6;
+
+    p {
+      font-size: 16px;
+    }
   }
 
   // Date of birth and grades
@@ -67,11 +75,12 @@
       padding: 0 13px;
       font-size: 16px;
       border: 1px solid #d9d9d9;
+      color: #667085;
 
       &.active {
-        color: $primary-color;
-        background-color: #ab95f934;
-        border: 1px solid $primary-color;
+        color: #6633FF;
+        background-color: #F4F1FE;
+        border: 1px solid #6633FF;
       }
     }
   }
@@ -91,7 +100,7 @@
 .summary-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: #ab95f9;
+  background-color: #F1EDFE;
   padding: 40px 10px;
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;

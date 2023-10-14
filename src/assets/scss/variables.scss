@@ -1,5 +1,5 @@
 // Theme colors variables
-$primary-color: #ab95f9;
+$primary-color: #896AF9;
 $secondary-color: #3b3935;
 $success-color: #accd7e;
 $info-color: #7ab8ce;
@@ -8,8 +8,8 @@ $danger-color: #c4183c;
 
 $primary-color-dark: #7f67d5;
 
-$theme-body-font-color: #3b3935;
-$theme-placeholder-color: #c5c5c5;
+$theme-body-font-color: #000000;
+$theme-placeholder-color: #667085;
 
 // gradient colors
 $gradient-primary: linear-gradient(
@@ -19,5 +19,5 @@ $gradient-primary: linear-gradient(
 );
 
 // General
-$body-font-size: 18px;
+$body-font-size: 20px;
 $body-font-color: $theme-body-font-color;

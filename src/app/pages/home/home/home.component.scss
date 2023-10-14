@@ -25,7 +25,7 @@
   background-color: #fff9e6;
   margin-bottom: 50px;
 
-  h3 {
+  h1 {
     max-width: 280px;
     text-align: center;
     margin-bottom: 20px;
@@ -33,6 +33,7 @@
 
   p {
     text-align: center;
+    font-size: 24px;
   }
 }
 
@@ -58,7 +59,11 @@
   }
 
   .discover {
-    h3 {
+    background-image: url("../../../../assets/images/home/bg.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: contain;
+    h1 {
       max-width: 480px;
     }
 

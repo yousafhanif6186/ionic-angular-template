@@ -2,7 +2,9 @@
   <div class="container steps">
     <div class="wrapper">
       <div *ngFor="let step of steps" class="step">
-        <img src="{{ step.image }}" alt="img" />
+        <div class="img-container">
+          <img src="{{ step.image }}" alt="img" />
+        </div>
 
         <h4 [innerHTML]="step.title"></h4>
 
